@@ -15,7 +15,7 @@ public class EmailValidator {
 
 
         String regex =
-                "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+                "^[a-zA-Z0-9._%+-]@[a-zA-Z0-9.-]\\.[a-zA-Z]{2,}$";
 
 
         boolean valid = Pattern.matches(regex, email);
