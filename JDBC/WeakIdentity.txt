@@ -1,0 +1,17 @@
+        ORDER
+     ┌───────────┐
+     │ order_id  │
+     │ order_date│
+     └─────┬─────┘
+           │
+           │ identifying
+           │ relationship
+           │
+     ╔═════▼════════╗
+     ║  ORDER_ITEM  ║
+     ╠══════════════╣
+     ║ product_id   ║ ← Partial Key
+     ║ quantity     ║
+     ║ price        ║
+     ╚══════════════╝
+     

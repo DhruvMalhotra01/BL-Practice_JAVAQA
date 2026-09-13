@@ -1,0 +1,35 @@
+┌─────────────────────┐
+│       PATIENT       │
+├─────────────────────┤
+│ patient_id (PK)     │
+│ name                │
+│ age                 │
+│ gender              │
+│ phone               │
+└──────────┬──────────┘
+           │
+           │ 1
+           │
+           │ N
+┌──────────▼──────────┐
+│    APPOINTMENT      │
+├─────────────────────┤
+│ appointment_id (PK) │
+│ appointment_date    │
+│ appointment_time    │
+│ patient_id (FK)     │
+│ doctor_id (FK)      │
+│ status              │
+└──────────┬──────────┘
+           │
+           │ N
+           │
+           │ 1
+┌──────────▼──────────┐
+│       DOCTOR        │
+├─────────────────────┤
+│ doctor_id (PK)      │
+│ name                │
+│ specialization      │
+│ phone               │
+└─────────────────────┘
